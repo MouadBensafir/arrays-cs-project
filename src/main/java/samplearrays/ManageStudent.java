@@ -155,6 +155,23 @@ public class ManageStudent {
                 System.out.println(student.getName());
             }
         }
+
+        // Print the top student of each class
+        System.out.println("\n== Top student of each class ==");
+        for (int i = 0; i < classes.length; i++) {
+            Student[] cls = classes[i];
+
+            // Find the top student (highest grade)
+            Student top = cls[0];
+            for (Student s : cls) {
+                if (s.getGrade() > top.getGrade()) {
+                    top = s;
+                }
+            }
+
+            System.out.println("Class " + (i + 1) + " top: " + top.getName() + " with grade (" + top.getGrade() + ")");
+        }
+
     }
 }
 
