@@ -1,9 +1,9 @@
 # Exercises on Arrays, class and Object, Wrapper Classes ...
 
-## Project description 
+## Project description
 
-This project contains a couple of exercises 
+This project contains a couple of exercises
 
-## Student 
+## Student
 
-- First name, Second name
+- Mouad BENSAFIR
