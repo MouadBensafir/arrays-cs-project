@@ -7,7 +7,11 @@ public class ManageStudent {
 
     // 2) Find the Oldest Student
     public static Student findOldest(Student[] students) {
-
+        if (students.length == 0) return null;
+        Student oldest = students[0];
+        for (Student s : students) {
+            if (s.getAge() > oldest.getAge()) oldest = s;
+        }
         return oldest;
     }
 
@@ -54,7 +58,13 @@ public class ManageStudent {
     // 1) Create an Array of Students + demos for all tasks
     public static void main(String[] args) {
         // Create & initialize array of 5 students
-
+        Student[] arr = {
+                new Student(1, "Arin", 20),
+                new Student(2, "Sora", 21),
+                new Student(3, "Wyldfyre", 20),
+                new Student(4, "Frak", 19),
+                new Student(5, "Riyu", 19, 16)
+        };
 
         // Print all
         System.out.println("== All Students ==");
